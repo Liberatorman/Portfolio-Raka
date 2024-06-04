@@ -1,5 +1,5 @@
 import styles from './HeroStyles.module.css';
-import heroImg from '../../assets/hero-img.png';
+import heroImg from '../../assets/Raka.png';
 import sun from '../../assets/sun.svg';
 import moon from '../../assets/moon.svg';
 import twitterLight from '../../assets/twitter-light.svg';
@@ -38,17 +38,17 @@ function Hero() {
         <h1>Muhammad <br /> Raka Nugraha</h1>
         <h2>UI/UX Designer & Web Developer</h2>
         <span>
-          <a href="https://twitter.com/" target="_blank">
+          <a href="https://www.instagram.com/rakanugraha_88/" target="_blank">
               <img src={twitterIcon} alt="Twitter icon" />
           </a>
-            <a href="https://github.com/" target="_blank">
+            <a href="https://github.com/Liberatorman" target="_blank">
               <img src={githubIcon} alt="Github icon" />
           </a>
-            <a href="https://linkedin.com/" target="_blank">
+            <a href="https://www.linkedin.com/in/muhammad-raka-nugraha/" target="_blank">
               <img src={linkedinIcon} alt="Linkedin icon" />
           </a>
         </span>
-        <p>
+        <p className={styles.describe}>
         Experienced designer with a passion for creating and developing cutting-edge, responsive web applications.
         </p>
         <a href={CV} download>
