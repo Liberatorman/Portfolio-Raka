@@ -41,26 +41,14 @@
         font-weight: bold;
         box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25 );
         transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out;
-        -webkit-transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out;
-        -moz-transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out;
-        -ms-transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out;
-        -o-transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out;
     }
 
     button:hover {
         transform: scale(1.05);
-        -webkit-transform: scale(1.05);
-        -moz-transform: scale(1.05);
-        -ms-transform: scale(1.05);
-        -o-transform: scale(1.05);
     }
 
     button:active {
         transform: translateY(2px);
-        -webkit-transform: translateY(2px);
-        -moz-transform: translateY(2px);
-        -ms-transform: translateY(2px);
-        -o-transform: translateY(2px);
         box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25 );
     }
 }
@@ -71,6 +59,8 @@
 
 .colorMode {
     position: absolute;
+    right: 0;
+    width: 25px;
 }
 
 .colorMode:hover {
@@ -79,11 +69,34 @@
 
 .description {
     max-width: 24ch;
+    margin: auto;
 }
 
 .info {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     gap: 20px;
 }
+
+@media (width >= 800px) {
+    .container {
+      flex-direction: row-reverse;
+      align-items: center;
+      justify-content: space-evenly;
+  
+      .hero {
+        max-width: 350px;
+        width: 350px;
+      }
+    }
+  }
+  
+  @media (width >= 1400px) {
+    .container {
+      .hero {
+        max-width: 400px;
+        width: 400px;
+      }
+    }
+  }
+  

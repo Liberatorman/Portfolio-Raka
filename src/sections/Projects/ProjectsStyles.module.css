@@ -46,9 +46,10 @@
         }
 
         p {
-          text-align: justify;
-          text-align-last: center;
-          width: 30em;
+          word-wrap: normal;
+          margin: auto;
+          padding-left: 100px;
+          padding-right: 100px;
         }
 }
 
